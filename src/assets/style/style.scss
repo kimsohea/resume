@@ -1,0 +1,45 @@
+@forward "./_init";
+@forward "./_tmp";
+@forward "./_exper";
+
+:root {
+  font-family: "Pretendard Variable", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  * {
+    font-family: "Pretendard Variable", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+
+  &::selection {
+    background-color: #f8ff74bb;
+    color: #6600ff;
+  }
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

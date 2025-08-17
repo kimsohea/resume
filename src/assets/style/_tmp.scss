@@ -1,0 +1,39 @@
+.info {
+  display: flex;
+  font-size: 16px;
+
+  span {
+    position: relative;
+    display: flex;
+    margin-right: 12px;
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      right: -6px;
+      content: "";
+      width: 1px;
+      height: 80%;
+      background-color: #ddd;
+      transform: translateY(-50%);
+    }
+
+    &:last-of-type {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.round_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 8px;
+
+  li {
+    padding: 4px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+}

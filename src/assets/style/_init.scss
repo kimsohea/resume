@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+  * {
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 1.1;
+  text-align: left;
+}
+
+h2 {
+  margin: 12px auto 8px;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+
+  &:hover {
+    color: #535bf2;
+  }
+}
