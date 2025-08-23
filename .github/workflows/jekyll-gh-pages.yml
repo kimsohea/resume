@@ -40,7 +40,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       
-      - name: Build Vite React App
+      - name: Build Vite Vue App
         run: yarn build
         env:
           PUBLIC_URL: /${{ github.event.repository.name }}
