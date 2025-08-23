@@ -1,5 +1,5 @@
-# Vue 3 + Vite
+# 김소혜의 이력서
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+이력서 사이트로 ctrl + P 를 이용해 빠르고 쉽게 이력서 파일을 출력하실 수 있도록 구현한 사이트입니다
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Vite, Vue.js, SCSS 를 이용해 만들어졌습니다.

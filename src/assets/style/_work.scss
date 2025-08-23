@@ -1,0 +1,38 @@
+.work_record {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  > li {
+    display: flex;
+    width: calc(100% - 16px);
+    margin-left: 16px;
+
+    > span {
+      display: block;
+      width: 150px;
+      margin-top: 3px;
+    }
+  }
+
+  .text {
+    width: calc(100% - 150px);
+
+    a {
+      display: block;
+    }
+  }
+
+  .title {
+    display: flex;
+    font-size: 18px;
+
+    > span {
+      margin-left: 8px;
+    }
+  }
+
+  .round_list {
+    margin: 6px 0;
+  }
+}
