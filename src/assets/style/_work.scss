@@ -36,3 +36,29 @@
     margin: 6px 0;
   }
 }
+
+.license_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  li {
+    width: calc(100% - 16px);
+    margin-left: 16px;
+  }
+
+  strong {
+    font-size: 18px;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+  }
+
+  a {
+    display: block;
+    margin: 6px 0 0 16px;
+  }
+}

@@ -14,8 +14,8 @@
           <li v-for="(skill,i) in item.skill" :key="`${skill}_${i}`">{{ skill }}</li>
         </ul>
         <p>{{ item.desc }}</p>
-        <a v-if="item.linkPC != ''" href="{{ item.linkPC }}">{{ item.linkPC }}</a>
-        <a v-if="item.linkMO != ''" href="{{ item.linkMO }}">{{ item.linkMO }}</a>
+        <a v-if="item.linkPC != ''" :href="item.linkPC" target="_blank">{{ item.linkPC }}</a>
+        <a v-if="item.linkMO != ''" :href="item.linkMO" target="_blank">{{ item.linkMO }}</a>
       </div>
     </li>
   </ul>
