@@ -5,7 +5,11 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vite.dev/config/
 export default defineConfig({
+  ase: "/resume/",
   plugins: [vue()],
+  build: {
+    outDir: "dist",
+  },
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
