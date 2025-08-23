@@ -43,7 +43,7 @@ jobs:
       - name: Build Vite Vue App
         run: yarn build
         env:
-          PUBLIC_URL: /${{ github.event.repository.name }}
+          VITE_BASE_URL: /${{ github.event.repository.name }}/
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
