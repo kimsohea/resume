@@ -1,6 +1,6 @@
 <template>
   <h2>기술</h2>
-  <ul class="round_list">
+  <ul class="round_list skill">
     <li v-for="(item, idx) in skillArr" :key="`skill_${idx}`">
       {{ item }}
     </li>
@@ -23,17 +23,17 @@ const skillArr = [
   "Axios",
   "REST API",
   "STOMP",
-  "react-cookie",
+  "React Cookie",
   "i18next",
-  "chart.js",
-  "d3",
-  "Google charts",
+  "Chart.js",
+  "D3",
+  "Google Charts",
   "recharts",
   "vis.gl/react-google-maps",
-  "react-paginate",
-  "swiper",
+  "React Paginate",
+  "Swiper",
   "lucide-react",
-  "react grid layout",
+  "React Grid Layout",
   "Git",
   "GitHub",
   "Figma",
