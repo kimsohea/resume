@@ -62,3 +62,29 @@
     margin: 6px 0 0 16px;
   }
 }
+
+@media (max-width: 700px) {
+  .work_record {
+    > li {
+      flex-direction: column;
+      row-gap: 8px;
+      margin-left: 0;
+
+      p {
+        margin-left: 16px;
+      }
+
+      .text {
+        width: 100%;
+      }
+
+      .title {
+        margin-left: 0;
+      }
+
+      .round_list {
+        margin-left: 16px;
+      }
+    }
+  }
+}
