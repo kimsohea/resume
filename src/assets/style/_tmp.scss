@@ -42,3 +42,13 @@
     margin-left: 16px;
   }
 }
+
+@media (max-width: 600px) {
+  .info {
+    flex-wrap: wrap;
+  }
+
+  .round_list {
+    gap: 8px 4px;
+  }
+}

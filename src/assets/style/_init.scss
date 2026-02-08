@@ -43,5 +43,6 @@ a {
 article {
   > p {
     margin-left: 16px;
+    word-break: keep-all;
   }
 }

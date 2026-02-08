@@ -88,3 +88,15 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .work_record {
+    .title {
+      flex-wrap: wrap;
+
+      strong {
+        word-break: keep-all;
+      }
+    }
+  }
+}
