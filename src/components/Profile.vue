@@ -7,7 +7,7 @@
   <article>
     <h2>간단소개</h2>
     <p>
-      React.js와 Vue.js를 기반으로 퍼블리싱과 프론트엔드 개발을 모두 경험해 온 프론트엔드 개발자 김소혜입니다. 프로젝트에서는 Vuex, Zustand, TanStack Query를
+      React.js와 Vue.js를 기반으로 퍼블리싱과 프론트엔드 개발을 모두 경험해 온 {{career}} 김소혜입니다. 프로젝트에서는 Vuex, Zustand, TanStack Query를
       활용한 상태 관리와 데이터 캐싱 구조를 설계·적용하며, 화면 단위가 아닌 애플리케이션 흐름을 고려한 개발을 진행해 왔습니다. 또한 Figma 협업 환경에서
       디자이너와 공동 작업을 수행하고, Gulp 기반 빌드 환경에서 페이지 작업을 진행한 경험이 있어 퍼블리싱부터 프론트엔드 개발까지 유연하게 대응할 수 있습니다.
       <br /><br />
@@ -20,3 +20,8 @@
     </p>
   </article>
 </template>
+
+<script setup>
+  const type = new URLSearchParams(window.location.search).get("type") || ""
+  const career = type === "FE" ? "프론트엔드 개발자" : "웹 퍼블리셔"
+</script>
