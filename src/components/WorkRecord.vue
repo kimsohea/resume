@@ -144,8 +144,8 @@ const workArr = [
     contribute: "50%",
     desc: "메인 페이지 퍼블리싱",
     skill: ["Vue.js", "vuex", "JavaScript", "SCSS", "Adobe Photoshop"],
-    linkPC: "https://obozfootwear.co.kr/",
-    linkMO: "https://m.obozfootwear.co.kr/",
+    linkPC: "",
+    linkMO: "",
   },
 ];
 </script>
