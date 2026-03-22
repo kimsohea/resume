@@ -1,27 +1,19 @@
 <template>
   <h1>김소혜</h1>
-  <p class="info">
+  <p class="info profile">
     <span class="address"> 주소: 서울특별시 구로구 </span>
     <span> e-mail: kimsohea4425@gmail.com </span>
   </p>
   <article>
     <h2>간단소개</h2>
     <p>
-      React.js와 Vue.js를 기반으로 퍼블리싱과 프론트엔드 개발을 모두 경험해 온 {{career}} 김소혜입니다. 프로젝트에서는 Vuex, Zustand, TanStack Query를
-      활용한 상태 관리와 데이터 캐싱 구조를 설계·적용하며, 화면 단위가 아닌 애플리케이션 흐름을 고려한 개발을 진행해 왔습니다. 또한 Figma 협업 환경에서
-      디자이너와 공동 작업을 수행하고, Gulp 기반 빌드 환경에서 페이지 작업을 진행한 경험이 있어 퍼블리싱부터 프론트엔드 개발까지 유연하게 대응할 수 있습니다.
-      <br /><br />
-      요구사항에 맞춰 설계된 API를 기반으로 데이터를 처리하고, Vite 환경에서 Proxy 설정과 환경 변수(.env)를 활용해 CORS 이슈 및 보안 키 관리 경험을 보유하고
-      있습니다. TypeScript를 활용한 컴포넌트 개발 경험이 있으며, React Context를 포함한 다양한 상태 관리 방식에 대한 이해를 바탕으로 프로젝트 성격에 맞는 구조를
-      선택해 적용해 왔습니다. 스타일링 측면에서는 SCSS와 styled-components를 사용해 유지보수성과 재사용성을 고려한 UI 구현을 진행했습니다.
-      <br /><br />
-      또한 웹디자인 경험을 바탕으로 단순한 화면 구현에 그치지 않고, 사용자 경험을 중심으로 한 UI 개선과 리디자인 작업을 수행해 왔습니다. 인터랙션 흐름과 사용
-      맥락을 고려한 구조 설계를 통해, 사용자에게 자연스럽게 인지되는 화면을 만드는 것을 개발의 중요한 기준으로 삼고 있습니다.
+      데이터 흐름을 기반으로 구조를 설계하고, 성능 최적화와 가독성 높은 코드 작성을 통해 유지보수성을 확보합니다. 단순 구현을 넘어 사용자 경험까지 고려한 화면과
+      상태 흐름을 논리적으로 설계하는 실무형 {{ career }}입니다.
     </p>
   </article>
 </template>
 
 <script setup>
-  const type = new URLSearchParams(window.location.search).get("type") || ""
-  const career = type === "FE" ? "프론트엔드 개발자" : "웹 퍼블리셔"
+const type = new URLSearchParams(window.location.search).get("type") || "";
+const career = type === "FE" ? "프론트엔드" : "웹 퍼블리셔";
 </script>
