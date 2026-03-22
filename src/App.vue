@@ -1,8 +1,12 @@
 <template>
   <Profile />
+  <hr />
   <Experience />
-  <Skill />
+  <hr />
   <WorkRecord />
+  <hr />
+  <Skill />
+  <hr />
   <License />
 </template>
 

@@ -2,10 +2,10 @@
   <h2>프로젝트 경험</h2>
   <ul class="work_record">
     <li v-for="item in workArr" :key="item.title">
-      <span>{{ item.time }}</span>
       <div class="text">
         <p class="title">
           <strong>{{ item.title }}</strong>
+          <span>{{ item.time }}</span>
           <span>기여도: {{ item.contribute }}</span>
         </p>
         <ul class="round_list">
