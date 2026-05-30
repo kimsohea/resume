@@ -8,10 +8,9 @@
           <span>{{ item.time }}</span>
         </p>
         <StackGroup :title="item.title" :tools="item.skill" />
-        <a v-if="item.linkPC != ''" :href="item.linkPC" target="_blank">{{ item.linkPC }}</a>
-        <a v-if="item.linkMO != ''" :href="item.linkMO" target="_blank">{{ item.linkMO }}</a>
+        <a v-if="getWorkLink(item)" :href="getWorkLink(item)" target="_blank" rel="noopener noreferrer">{{ item.siteName }}</a>
       </div>
-      <ul>
+      <ul class="task_list">
         <li v-for="(task, i) in item.tasks" :key="`${task}_${i}`">{{ task }}</li>
       </ul>
     </li>
@@ -19,7 +18,29 @@
 </template>
 
 <script setup>
+import { onMounted, onUnmounted, ref } from "vue";
 import StackGroup from "./StackGroup.vue";
+
+const isPadOrPhone = ref(false);
+const mediaQuery = typeof window !== "undefined" ? window.matchMedia("(max-width: 1024px)") : null;
+
+const updateScreenType = () => {
+  isPadOrPhone.value = mediaQuery?.matches ?? false;
+};
+
+const getWorkLink = (item) => {
+  if (isPadOrPhone.value && item.linkMO) return item.linkMO;
+  return item.linkPC || item.linkMO;
+};
+
+onMounted(() => {
+  updateScreenType();
+  mediaQuery?.addEventListener("change", updateScreenType);
+});
+
+onUnmounted(() => {
+  mediaQuery?.removeEventListener("change", updateScreenType);
+});
 
 const workArr = [
   {
@@ -35,6 +56,7 @@ const workArr = [
     skill: ["React.js", "React Query", "Axios", "Vite", "recharts", "Zustand", "SCSS", "dayjs", "lucide-react"],
     linkPC: "",
     linkMO: "",
+    siteName: "",
   },
   {
     time: "2025.07 - 2026.04",
@@ -68,6 +90,7 @@ const workArr = [
     ],
     linkPC: "https://www.hiddentageye.com/",
     linkMO: "",
+    siteName: "HIDDENTAG E.Y.E",
   },
   {
     time: "2025.05 - 2025.06",
@@ -81,6 +104,7 @@ const workArr = [
     skill: ["HTML", "SCSS", "JavaScript", "jQuery"],
     linkPC: "",
     linkMO: "",
+    siteName: "",
   },
   {
     time: "2024.01 - 2024.09",
@@ -94,6 +118,7 @@ const workArr = [
     skill: ["Vue.js", "vuex", "JavaScript", "SCSS"],
     linkPC: "",
     linkMO: "",
+    siteName: "",
   },
   {
     time: "2024.05 - 2024.06",
@@ -107,6 +132,7 @@ const workArr = [
     skill: ["Vue.js", "vuex", "JavaScript", "REST API", "SCSS", "Figma", "Adobe Photoshop"],
     linkPC: "https://wlab.co.kr",
     linkMO: "https://m.wlab.co.kr",
+    siteName: "WLAB",
   },
   {
     time: "2024.05 - 2024.06",
@@ -119,6 +145,7 @@ const workArr = [
     skill: ["Vue.js", "vuex", "JavaScript", "REST API", "SCSS", "Figma", "Adobe Photoshop"],
     linkPC: "https://wearlounge.com/",
     linkMO: "https://m.wearlounge.com/",
+    siteName: "wearLounge",
   },
   {
     time: "2024.01 - 2024.02",
@@ -132,6 +159,7 @@ const workArr = [
     skill: ["Vue.js", "vuex", "JavaScript", "SCSS", "Figma", "Adobe Photoshop"],
     linkPC: "https://marmotkorea.kr/",
     linkMO: "https://m.marmotkorea.kr/",
+    siteName: "marmot",
   },
   {
     time: "2023.11 - 2023.12",
@@ -145,6 +173,7 @@ const workArr = [
     skill: ["Vue.js", "vuex", "JavaScript", "SCSS", "Figma", "Adobe Photoshop"],
     linkPC: "",
     linkMO: "",
+    siteName: "",
   },
   {
     time: "2023.09 - 2023.10",
@@ -158,6 +187,7 @@ const workArr = [
     skill: ["React.js", "styled-components", "SCSS", "gulp"],
     linkPC: "https://aykasa-korea.co.kr/",
     linkMO: "",
+    siteName: "AYKASA",
   },
   {
     time: "2023.07 - 2023.08",
@@ -171,6 +201,7 @@ const workArr = [
     skill: ["React.js", "styled-components", "SCSS", "gulp"],
     linkPC: "https://www.nhnwetoo.com",
     linkMO: "",
+    siteName: "NHN WETOO",
   },
   {
     time: "2023.06 - 2023.07",
@@ -180,6 +211,7 @@ const workArr = [
     skill: ["Vue.js", "vuex", "JavaScript", "SCSS", "Figma", "Adobe Photoshop"],
     linkPC: "https://obozfootwear.co.kr/",
     linkMO: "https://m.obozfootwear.co.kr/",
+    siteName: "OBOZ",
   },
   {
     time: "2023.05 - 2023.05",
@@ -189,6 +221,7 @@ const workArr = [
     skill: ["Vue.js", "vuex", "JavaScript", "SCSS", "Adobe Photoshop"],
     linkPC: "",
     linkMO: "",
+    siteName: "",
   },
 ];
 </script>
