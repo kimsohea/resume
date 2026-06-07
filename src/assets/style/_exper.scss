@@ -27,7 +27,7 @@
   .info {
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 6px 8px;
+    gap: 6px 0;
     margin: 0;
 
     span {
@@ -68,7 +68,6 @@
   border-radius: 999px;
   background: #ccc;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 
   &:first-child {
     margin-left: 0;
@@ -96,12 +95,12 @@
     letter-spacing: -0.02em;
     color: #fff;
   }
-}
 
-.stack_avt.more {
-  background: #f3f4f6;
-  color: #222;
-  border-color: #fff;
-  font-size: 11px;
-  font-weight: 700;
+  &.more {
+    background: #f3f4f6;
+    color: #222;
+    border-color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+  }
 }

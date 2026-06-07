@@ -90,13 +90,13 @@ const workArr = [
     ],
     skill: [
       "React.js",
+      "Vite",
+      "i18next",
+      "STOMP",
       "Zustand",
       "Axios",
       "React Query",
-      "STOMP",
-      "Vite",
       "SCSS",
-      "i18next",
       "Chart.js",
       "D3",
       "Google charts",
@@ -149,7 +149,7 @@ const workArr = [
       { name: "wetooMRO" },
       { name: "gabangpop" },
     ],
-    skill: ["Vue.js", "vuex", "JavaScript", "REST API", "SCSS", "Figma", "Adobe Photoshop"],
+    skill: ["Vue.js", "Figma", "vuex", "JavaScript", "REST API", "SCSS", "Adobe Photoshop"],
   },
   {
     time: "2023.07 - 2023.10",
@@ -163,7 +163,7 @@ const workArr = [
       { name: "AYKASA", linkPC: "https://aykasa-korea.co.kr/", linkMO: "" },
       { name: "NHN WETOO", linkPC: "https://www.nhnwetoo.com", linkMO: "" },
     ],
-    skill: ["React.js", "styled-components", "SCSS", "gulp"],
+    skill: ["React.js", "styled-components", "gulp", "SCSS"],
   },
 ];
 </script>
