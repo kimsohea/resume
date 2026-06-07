@@ -92,7 +92,7 @@ const workArr = [
       "React.js",
       "Zustand",
       "Axios",
-      "React-query",
+      "React Query",
       "STOMP",
       "Vite",
       "SCSS",
