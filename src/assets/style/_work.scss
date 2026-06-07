@@ -71,6 +71,8 @@
     }
 
     &.no_url {
+      pointer-events: none;
+
       &::after {
         display: none;
       }
