@@ -4,8 +4,7 @@
   <Experience />
   <hr />
   <WorkRecord />
-  <hr />
-  <Skill />
+
   <hr />
   <License />
 </template>
@@ -13,7 +12,6 @@
 <script setup>
 import Profile from "@/components/Profile";
 import Experience from "@/components/Experience";
-import Skill from "@/components/Skill";
 import WorkRecord from "@/components/WorkRecord";
 import License from "@/components/License";
 </script>
