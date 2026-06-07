@@ -82,10 +82,10 @@ const workArr = [
     time: "2025.07 - 2026.04",
     title: "HIDDENTAG E.Y.E\n(브랜드관제 2.0)",
     tasks: [
-      "{React} 기반 프론트엔드 구조 개선을 통해 (관제 페이지 버전 고도화)",
+      "{React} 기반 프론트엔드 구조 개선을 통해 (관제 페이지 사용자 경험 개선)",
       "{React Grid Layout}으로 위젯 커스터마이징 기능을 구현해 (사용자 맞춤형 대시보드 기능 지원)",
       "{i18next} 기반 다국어 처리 체계를 구축하여 (총 5개 언어 서비스 지원)",
-      "{Google Maps API, STOMP}로 스캔 위치 데이터를 연동하여 (지도 내 실시간 이벤트 반영)",
+      "{Google Maps API, STOMP}로 스캔 위치 데이터를 연동하여 (지도 이벤트 실시간 반영)",
       "{Chart.js, D3, Google Charts}로 데이터 시각화 컴포넌트를 구현하여 (데이터 가독성 개선)",
     ],
     skill: [
@@ -114,9 +114,9 @@ const workArr = [
     time: "2025.05 - 2025.06",
     title: "히든태그 앱 퍼블리싱(HiddenTag)",
     tasks: [
-      "{Java, Spring Boot} 기반 프로젝트에서 (UI 퍼블리싱 및 데이터 바인딩)",
-      "jQuery, Ajax 중심의 기존 코드를 {JavaScript}로 (기능 로직 단순화 및 리팩토링)",
-      "{비동기 요청, DOM 조작 흐름}을 정리하여 웹 브라우저 (렌더링 속도와 유지보수성 개선)",
+      "{Java, Spring Boot} 기반 프로젝트의 UI를 구현하여 (서비스 화면 구축)",
+      "{JavaScript} 기반으로 레거시 jQuery 코드를 리팩토링하여 (기능 로직 단순화)",
+      "{비동기 요청 및 DOM 조작 흐름}을 정리하여 (코드 가독성과 유지보수성 개선)",
     ],
     skill: ["HTML", "SCSS", "JavaScript", "jQuery"],
   },
@@ -133,9 +133,9 @@ const workArr = [
     time: "2023.05 - 2024.06",
     title: "Vue 기반 프로젝트\n구현 및 유지보수",
     tasks: [
-      "{Vue}기반 다수의 서비스 내 페이지 (UI 퍼블리싱 및 유지 보수)",
+      "{Vue.js} 기반 다수 서비스의 페이지 구현 및 운영으로 (서비스 유지보수 지원)",
       "{Shopby API}로 배너 및 제품 요소를 연동하여 (동적 데이터 바인딩 구현)",
-      "API 기반 콘텐츠 노출 구조로 (운영 데이터 반영 효율 개선)",
+      "{REST API 연동 구조}를 적용하여 (운영 데이터 반영 효율 개선)",
     ],
     links: [
       { name: "WLAB", linkPC: "https://wlab.co.kr", linkMO: "https://m.wlab.co.kr" },
@@ -156,7 +156,7 @@ const workArr = [
     title: "React 기반 프로젝트\n구현 및 유지보수",
     tasks: [
       "{Gulp.js} 기반 퍼블리싱 환경에서 (화면 및 사이트 구현)",
-      "{React}로 재빌드된 사이트의 프론트엔드 유지보수",
+      "{React} 기반 운영 서비스 유지보수로 (서비스 안정성 확보)",
       "기존 퍼블리싱 구조와 {React} 기반 화면 구조를 함께 대응하여 (운영 페이지 안정성 개선)",
     ],
     links: [
