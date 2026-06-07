@@ -21,8 +21,16 @@ import StackGroup from "./StackGroup.vue";
 
 const experArr = [
   {
+    tit: "아이팩토리",
+    time: "2026.04 - 재직중",
+    type: "정규직",
+    prof: "웹퍼블리싱",
+    grade: "사원",
+    work: ["Vue.js", "Quasar", "SCSS", "REST API", "SCSS", "Figma"],
+  },
+  {
     tit: "주식회사 씨케이앤비",
-    time: "2025.05 - 재직중",
+    time: "2025.05 - 2026.04(11개월)",
     type: "정규직",
     prof: "웹디자인&퍼블리싱&프론트엔드",
     grade: "주임",
@@ -59,7 +67,7 @@ const experArr = [
     type: "정규직",
     prof: "웹퍼블리싱",
     grade: "사원",
-    work: ["Vue.js", "vuex", "JavaScript", "SCSS", "REST API", "SCSS", "Figma", "Adobe Photoshop", "React.js", "styled-components", "gulp"],
+    work: ["Vue.js", "vuex", "JavaScript", "SCSS", "REST API", "Figma", "Adobe Photoshop", "React.js", "styled-components", "gulp"],
   },
   {
     tit: "인터코스메틱",
@@ -70,5 +78,4 @@ const experArr = [
     work: ["Adobe Photoshop", "Adobe Illustrator", "Figma", "HTML", "CSS 3"],
   },
 ];
-
 </script>
